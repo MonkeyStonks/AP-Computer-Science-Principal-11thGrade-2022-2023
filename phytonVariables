@@ -1,4 +1,4 @@
-#Print command
+'''#Print command
 
 x = 5
 y = "John"
@@ -57,7 +57,7 @@ print(random.randrange(1,10))
 #concatenation is to combine two strings, you can use the + operator
 
 a = "hello"
-b = "patricia"
+b = " Patricia"
 c = a + b
 print (c)
 
@@ -67,6 +67,46 @@ c = a + " " + b
 
 # String format
 
-age = "36"
+age = " 36"
 text = "My name is Patricia, I am" + age
 print (text)
+
+'''
+#Phyton Boolean
+#It uses two values True or False, it evaluates any expression to True or False, phyton then evaluates ang gives a boolean answer
+
+print ( 10 > 9 )
+print ( 10 == 9 )
+print ( 10 < 9 )
+
+#Boolean in a condition ( an "if" statement )
+
+a = 200
+b = 33
+
+if b > a:
+  print ("b is greater than a")
+else:
+  print ("a is greater than b")
+
+#Evaluate Values and Variables
+#Evaluate a string and a number, example function "bool()"
+
+print (bool("Hello"))
+print (bool(15))
+
+#OPERATORS
+#Examples 
+x = 2
+y = 5
+
+#print
+
+print (x % y)
+print (x // y)
+
+#The floor division // rounds the result down to the nearest whole number
+
+print(x ** y)
+
+#Same as 2*2*2*2*2
