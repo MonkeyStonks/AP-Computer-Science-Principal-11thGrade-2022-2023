@@ -1,0 +1,97 @@
+'''# Functions
+A function is  a block of code which only runs when it is called. You can pass data, known as parameter, intoa function. A function can get data as a result
+
+# Creating a function
+
+# In phyton, a function is created using a def keyboard
+
+# Example
+def my_function():
+  print("Hello from a function")
+my_function()
+
+def my_function (fname):
+  print (fname + " Joaquin")
+my_function("pizza")
+
+# Parameters or arguments
+
+# The terms parameter and argument can be used for the same thing. Information that are passed into a function
+
+# A parameter is the variable listed inside the parenthesis in the function definition
+
+# An argument is the value that is sent to the function when it is called
+
+# Example
+def my_function (fname, lname):
+  print(fname + " " + lname)
+my_function("Carlos", "Campuzano")'''
+
+# Phyton Class
+
+# To create a class, use a keyword class
+
+# Create a class name named MyClass, with a property named x:
+class MyClass :
+  x=5
+
+# Create an Object
+
+# We can use the class name MyClass to create an object
+
+# Create an object named g1, and print the value of x:
+p1 = MyClass()
+print(p1.x)
+
+# The _init_() Function 
+
+# Use the _init_() function to assign values for name and age : 
+
+# Create a class named Person, and use the _init_() function to assign values for name and age :
+
+class Person():
+  def __init__ (self, name, age):
+    self.name = name
+    self.age = age
+p1 = Person("John", 36) 
+print (p1.name)
+print (p1.age)
+
+# Note The _init_ function is called automatically everytime the class is being used to create a new object
+
+# Phyton Inheritance
+
+# Inheritance allows us to define a class that inherit all the methods and properties from another class
+
+# Parent class is the class name being inherited from, also called base class
+
+# Child class: the class that inherits from another class, also called drived class
+
+# Any class can be a parent, so syntax is the same as creating another class 
+
+# ex: create a class named Person, with firstname and lastname properties, and a printname method 
+
+class Person: #Parent class
+  def _init_(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+  def print(self):
+    print (self.firstname, self.lastname)
+  
+# Use the person class to create an object, and then execute the printname method 
+
+x = Person ("John", "Doe")
+x.printname()
+#Child class
+
+# To create a class that inherits the functionality from another class, send the parent class as a parameterwhen creating the child class
+
+# Create a class named Student which will inherit the properties and methods from the Person class
+
+class Student (Person):
+  pass 
+
+# Ex: Use the Student class to create an object, and then execute the printname method
+  
+x = Student ("Mike", "Olsen")
+x.printname()
